@@ -17,11 +17,24 @@ author:
 Philip James Maechling
 pjmaechling@yahoo.com
 
-
+== Example invocation ==
 Example Call:
 %qsub -A Equake_SS -n 2 -t 10 --mode c16 mmpi # Measures 32 cores on 2 nodes
 %qsub -A Equake_SS -n 32 -t 10 —mode c1 mmpi # Measures 32 cores on 32 nodes
 
+== Measuring a new machine ==
+To measure a new machine, the most common changes required are:
+New makefile that works on system under test
+Job submission script with appropriate parameters such as cores per node
+The mmpi2mat.py script will often need to be updated to properly scan the 
+measurement output file.
+
+== File Formats ==
+1. Measurement file format
+2. matlab file format
+3. matlab plot formats
+
+== Program Limits ==
 
 Please note the program limits defined in the mmpi.h amd mmsg.h 
 configuration files. These can be changed
