@@ -1,0 +1,12 @@
+#!/bin/tcsh
+
+#BSUB -J mmpi_pjm
+#BSUB -q normal
+#BSUB -o output.%J.out
+#BSUB -W 0:05
+#BSUB -n 256
+#BSUB -R 'span[ptile=4]'
+cd $LS_SUBCWD
+ibrun ./mmpi
+./mmpi2mat.py 64
+exit 0

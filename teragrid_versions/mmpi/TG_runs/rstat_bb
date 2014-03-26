@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import os
+
+os.system("qstat -a | grep maechlin")

@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import os
+
+os.system("bsub < mmpi_lsf.brun")

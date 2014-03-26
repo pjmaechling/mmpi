@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import os
+
+os.system("qsub mmpi_ncsa.pbs")

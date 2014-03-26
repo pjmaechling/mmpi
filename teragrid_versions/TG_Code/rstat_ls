@@ -1,0 +1,4 @@
+#! /bin/env python
+import os
+
+os.system("showq -U tg456034")

@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# This is the pbs script template for the MMPI program
+#
+# We define the number of repitions for the data transfers, and the 
+# message length of each transfer. These are parameters that are passed
+# into the main mmmpi program as well as to script that extracts the
+# matlab arrays
+#
+#$ -V
+#$ -cwd
+#$ -N mmpi_pjm
+#$ -pe 16way 16
+#$ -l h_rt=00:05:00
+#$ -o mmpi_pjm.out$JOB_ID
+#$ -j y
+#$ -q development
+ibrun ./mmpi
+./mmpi2mat.py 256 
+exit 0

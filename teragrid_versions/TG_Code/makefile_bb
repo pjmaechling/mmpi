@@ -1,0 +1,6 @@
+all:mmpi
+
+mmpi:mmpi.c
+	cc mmpi.c -o mmpi
+clean:
+	rm *.o mmpi *.txt *.pyc *.out mmpi.pbs.o* mmpi.pbs.e* *.dat
