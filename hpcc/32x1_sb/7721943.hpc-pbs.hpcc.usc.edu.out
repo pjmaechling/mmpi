@@ -1,0 +1,61 @@
+----------------------------------------
+Begin PBS Prologue Fri Mar 28 12:54:41 PDT 2014
+Job ID:            7721943.hpc-pbs.hpcc.usc.edu
+Username:          maechlin
+Group:             scec
+Name:              runSB32x1.sh
+Queue:             main
+Shared Access:     no
+All Cores:         no
+Nodes:             hpc1752 hpc1753 hpc1754 hpc1909 hpc1913 hpc1914 hpc1916 hpc1917 hpc1918 hpc1919 hpc1920 hpc1921 hpc1922 hpc1924 hpc1925 hpc1926 hpc2491 hpc2492 hpc2493 hpc2494 hpc2495 hpc2497 hpc2498 hpc2499 hpc2500 hpc2501 hpc2502 hpc2503 hpc2504 hpc2505 hpc2507 hpc2508 
+PVFS:              /scratch (tcp://hpc1752.m10g.hpcc.usc.edu:3334/pvfs2-fs), /staging (tcp://hpc-ofs08.ib.hpcc.usc.edu:3334/staging)
+TMPDIR:            /tmp/7721943.hpc-pbs.hpcc.usc.edu
+End PBS Prologue Fri Mar 28 12:54:51 PDT 2014
+----------------------------------------
+hpc1752
+hpc1753
+hpc1754
+hpc1909
+hpc1913
+hpc1914
+hpc1916
+hpc1917
+hpc1918
+hpc1919
+hpc1920
+hpc1921
+hpc1922
+hpc1924
+hpc1925
+hpc1926
+hpc2491
+hpc2492
+hpc2493
+hpc2494
+hpc2495
+hpc2497
+hpc2498
+hpc2499
+hpc2500
+hpc2501
+hpc2502
+hpc2503
+hpc2504
+hpc2505
+hpc2507
+hpc2508
+hostname - hpc1752 reslen - 23
+Total paths under test: 528
+----------------------------------------
+Begin PBS Epilogue Fri Mar 28 12:55:03 PDT 2014
+Job ID:           7721943.hpc-pbs.hpcc.usc.edu
+Username:         maechlin
+Group:            scec
+Job Name:         runSB32x1.sh
+Session:          29102
+Limits:           neednodes=32:ppn=1,nodes=32:ppn=1,walltime=00:01:59
+Resources:        cput=00:00:01,mem=900kb,vmem=93652kb,walltime=00:00:11
+Queue:            main
+Shared Access:    no
+End PBS Epilogue Fri Mar 28 12:55:09 PDT 2014
+----------------------------------------

@@ -1,0 +1,61 @@
+----------------------------------------
+Begin PBS Prologue Fri Mar 28 13:17:29 PDT 2014
+Job ID:            7722008.hpc-pbs.hpcc.usc.edu
+Username:          maechlin
+Group:             scec
+Name:              run32x1_mn.sh
+Queue:             nbns_hiprio
+Shared Access:     no
+All Cores:         no
+Nodes:             hpc2245 hpc2246 hpc2247 hpc2248 hpc2249 hpc2250 hpc2251 hpc2252 hpc2253 hpc2254 hpc2255 hpc2256 hpc2257 hpc2258 hpc2259 hpc2260 hpc2261 hpc2262 hpc2263 hpc2264 hpc2265 hpc2266 hpc2267 hpc2268 hpc2269 hpc2270 hpc2271 hpc2272 hpc2273 hpc2274 hpc2275 hpc2276 
+PVFS:              /scratch (1.3T), /staging (328T)
+TMPDIR:            /tmp/7722008.hpc-pbs.hpcc.usc.edu
+End PBS Prologue Fri Mar 28 13:17:40 PDT 2014
+----------------------------------------
+hpc2245
+hpc2246
+hpc2247
+hpc2248
+hpc2249
+hpc2250
+hpc2251
+hpc2252
+hpc2253
+hpc2254
+hpc2255
+hpc2256
+hpc2257
+hpc2258
+hpc2259
+hpc2260
+hpc2261
+hpc2262
+hpc2263
+hpc2264
+hpc2265
+hpc2266
+hpc2267
+hpc2268
+hpc2269
+hpc2270
+hpc2271
+hpc2272
+hpc2273
+hpc2274
+hpc2275
+hpc2276
+hostname - hpc2245 reslen - 23
+Total paths under test: 528
+----------------------------------------
+Begin PBS Epilogue Fri Mar 28 13:17:45 PDT 2014
+Job ID:           7722008.hpc-pbs.hpcc.usc.edu
+Username:         maechlin
+Group:            scec
+Job Name:         run32x1_mn.sh
+Session:          4328
+Limits:           neednodes=32:ppn=1:myri,nodes=32:ppn=1:myri,walltime=00:01:59
+Resources:        cput=00:00:01,mem=944kb,vmem=93652kb,walltime=00:00:05
+Queue:            nbns_hiprio
+Shared Access:    no
+End PBS Epilogue Fri Mar 28 13:17:51 PDT 2014
+----------------------------------------
