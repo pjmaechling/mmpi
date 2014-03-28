@@ -145,6 +145,53 @@ def split_lines_mira(lines):
       tlist.append(plist)
   return tlist
 
+def split_lines_bw(lines):  
+  for x in mlist:
+    nlist = []
+    flist = []
+    plist = []
+    blist = []
+    alist = []
+    if x.startswith("#"):
+      continue
+    else:
+      # split line into 6 pieces
+      #print "Spliting" 
+      #print x
+      vallist = x.split()
+      ranklo = vallist[1]
+      rankhi = vallist[3]
+      lat = vallist[4]
+      var = vallist[5]
+      print "lo: " + ranklo
+      print "hi: " + rankhi
+      print "lat: " + lat
+      print "var: " + var
+      #sys.exit(0)
+      # save rank 0
+      #print nlist
+      plist.append(ranklo)
+      # append rank to plist
+      # split to remove usc.edu
+      #blist = nlist[0].split(".")
+      #print blist
+      # append node name plist
+      plist.append("var")
+      # save rank hi
+      plist.append(rankhi)
+      # split name to remove usc.edu
+      #alist = nlist[2].split(".")
+      # append nodename to plist
+      #print alist
+      plist.append("var")
+      # append commtime
+      plist.append(lat)
+      #apend stdev
+      plist.append(var)
+      # put this list into tlist
+      tlist.append(plist)
+  return tlist
+
 
 #
 # Start of main routine
@@ -161,9 +208,9 @@ cores = sys.argv[1]
 mlen = 64
 reps = 100
 
-ifname = "../mira/ammpi_%s_%s_%s.dat"%(cores,mlen,reps)
-opfname = "../mira/ammpi_%s_%s_%s_comm.dat"%(cores,mlen,reps)
-ovfname = "../mira/ammpi_%s_%s_%s_var.dat"%(cores,mlen,reps)
+ifname = "../bw/ammpi_%s_%s_%s.dat"%(cores,mlen,reps)
+opfname = "../bw/ammpi_%s_%s_%s_comm.dat"%(cores,mlen,reps)
+ovfname = "../bw/ammpi_%s_%s_%s_var.dat"%(cores,mlen,reps)
 
 #
 # Read the report from the mmpi program
@@ -181,7 +228,7 @@ f.close()
 # Split the lines into fields we need
 #
 tlist = []
-tlist = split_lines_mira(mlist)
+tlist = split_lines_bw(mlist)
 
 #
 # First Create the list of nodes
